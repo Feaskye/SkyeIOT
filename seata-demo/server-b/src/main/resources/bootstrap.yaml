@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: server-b
+  cloud:
+    nacos:
+      config:
+        namespace: seata-demo
+        username: jw_nacos
+        password: Joyware@123
+        server-addr: ${NACOS_ADDR:http://10.100.23.190:8848}
+        file-extension: yaml
+        prefix: ${spring.application.name}
+      discovery:
+        namespace: seata-demo
+        username: jw_nacos
+        password: Joyware@123
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+#seata
+seata:
+  tx-service-group: group_a
+  retry:
+    max-attempts: 5 # 最大重试次数，默认为1次
+    initial-delay: 1000 # 初始延迟时间（毫秒），默认为1秒
+    multiplier: 2.0 # 每次重试之间的延迟乘数，默认为2.0
+    max-delay: 30000 # 最大延迟时间（毫秒），默认为30秒
+  service:
+    vgroup-mapping:
+      group_a: HangZhou #和服务端的集群cluster对应
+  registry:
+    type: nacos
+    nacos:
+      server-addr: 10.100.23.190:8848
+      namespace: seata-demo
+      username: jw_nacos
+      group: DEFAULT_GROUP
+      password: Joyware@123

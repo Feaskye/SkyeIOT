@@ -1,0 +1,18 @@
+===2025-05-08 16:29:39.157 | [main] | WARN  | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Line:87  - Ignore the empty nacos configuration and get it based on dataId[liteflow-service] & group[DEFAULT_GROUP]
+===2025-05-08 16:29:39.828 | [main] | WARN  | org.mybatis.spring.mapper.ClassPathMapperScanner | Line:44  - No MyBatis mapper was found in '[com.example.liteflow]' package. Please check your configuration.
+===2025-05-08 16:29:42.562 | [NettyClientSelector_TMROLE_1_1] | WARN  | io.seata.common.loader.EnhancedServiceLoader$InnerEnhancedServiceLoader | Line:543 - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
+===2025-05-08 16:29:43.441 | [main] | WARN  | com.netflix.config.sources.URLConfigurationSource | Line:121 - No URLs will be polled as dynamic configuration sources.
+===2025-05-08 16:29:43.448 | [main] | WARN  | com.netflix.config.sources.URLConfigurationSource | Line:121 - No URLs will be polled as dynamic configuration sources.
+===2025-05-08 16:29:48.223 | [Thread-12] | WARN  | com.alibaba.nacos.common.notify.NotifyCenter | Line:145 - [NotifyCenter] Start destroying Publisher
+===2025-05-08 16:29:48.223 | [Thread-2] | WARN  | com.alibaba.nacos.common.http.HttpClientBeanHolder | Line:108 - [HttpClientBeanHolder] Start destroying common HttpClient
+===2025-05-08 16:29:48.223 | [Thread-12] | WARN  | com.alibaba.nacos.common.notify.NotifyCenter | Line:162 - [NotifyCenter] Destruction of the end
+===2025-05-08 16:29:48.224 | [Thread-2] | WARN  | com.alibaba.nacos.common.http.HttpClientBeanHolder | Line:114 - [HttpClientBeanHolder] Destruction of the end
+===2025-05-08 16:36:50.085 | [main] | WARN  | com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder | Line:87  - Ignore the empty nacos configuration and get it based on dataId[liteflow-service] & group[DEFAULT_GROUP]
+===2025-05-08 16:36:50.667 | [main] | WARN  | org.mybatis.spring.mapper.ClassPathMapperScanner | Line:44  - No MyBatis mapper was found in '[com.example.liteflow]' package. Please check your configuration.
+===2025-05-08 16:36:53.293 | [NettyClientSelector_TMROLE_1_1] | WARN  | io.seata.common.loader.EnhancedServiceLoader$InnerEnhancedServiceLoader | Line:543 - Load [io.seata.serializer.hessian.HessianSerializer] class fail. com/caucho/hessian/io/AbstractHessianOutput
+===2025-05-08 16:36:54.092 | [main] | WARN  | com.netflix.config.sources.URLConfigurationSource | Line:121 - No URLs will be polled as dynamic configuration sources.
+===2025-05-08 16:36:54.096 | [main] | WARN  | com.netflix.config.sources.URLConfigurationSource | Line:121 - No URLs will be polled as dynamic configuration sources.
+===2025-05-08 16:36:58.671 | [Thread-12] | WARN  | com.alibaba.nacos.common.notify.NotifyCenter | Line:145 - [NotifyCenter] Start destroying Publisher
+===2025-05-08 16:36:58.671 | [Thread-2] | WARN  | com.alibaba.nacos.common.http.HttpClientBeanHolder | Line:108 - [HttpClientBeanHolder] Start destroying common HttpClient
+===2025-05-08 16:36:58.672 | [Thread-12] | WARN  | com.alibaba.nacos.common.notify.NotifyCenter | Line:162 - [NotifyCenter] Destruction of the end
+===2025-05-08 16:36:58.672 | [Thread-2] | WARN  | com.alibaba.nacos.common.http.HttpClientBeanHolder | Line:114 - [HttpClientBeanHolder] Destruction of the end

@@ -1,0 +1,172 @@
+===2025-05-08 16:29:39.170 | [main] | INFO  | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Line:112 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-liteflow-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-liteflow-service,DEFAULT_GROUP'}]
+===2025-05-08 16:29:39.183 | [main] | INFO  | com.example.liteflow.LiteFlowDemoApplicationTests | Line:651 - No active profile set, falling back to default profiles: default
+===2025-05-08 16:29:40.075 | [main] | INFO  | org.springframework.context.annotation.ConfigurationClassPostProcessor | Line:403 - Cannot enhance @Configuration bean definition 'com.yomahub.liteflow.springboot.config.LiteflowMainAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+===2025-05-08 16:29:40.149 | [main] | INFO  | org.springframework.cloud.context.scope.GenericScope | Line:295 - BeanFactory id=454d2d8c-5ff7-3b02-a569-63c8800b000d
+===2025-05-08 16:29:40.180 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:40.182 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:40.183 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:40.223 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:40.237 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:40.240 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:40.243 | [main] | INFO  | io.seata.spring.boot.autoconfigure.SeataAutoConfiguration | Line:63  - Automatically configure Seata
+===2025-05-08 16:29:40.296 | [main] | INFO  | io.seata.config.ConfigurationFactory | Line:69  - load Configuration from :Spring Configuration
+===2025-05-08 16:29:40.301 | [main] | INFO  | io.seata.config.ConfigurationFactory | Line:121 - load Configuration from :Spring Configuration
+===2025-05-08 16:29:40.368 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:208 - Initializing Global Transaction Clients ... 
+===2025-05-08 16:29:40.437 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientBootstrap | Line:147 - NettyClientBootstrap has started
+===2025-05-08 16:29:40.647 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:108 - will connect to 10.100.23.93:8091
+===2025-05-08 16:29:41.304 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:56  - NettyPool create channel to transactionRole:TMROLE,address:10.100.23.93:8091,msg:< RegisterTMRequest{applicationId='liteflow-service', transactionServiceGroup='group_a'} >
+===2025-05-08 16:29:42.599 | [main] | INFO  | io.seata.core.rpc.netty.TmNettyRemotingClient | Line:224 - register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x8acb9460, L:/10.100.23.93:56153 - R:/10.100.23.93:8091]
+===2025-05-08 16:29:42.604 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:81  - register success, cost 67 ms, version:2.0.0,role:TMROLE,channel:[id: 0x8acb9460, L:/10.100.23.93:56153 - R:/10.100.23.93:8091]
+===2025-05-08 16:29:42.605 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:222 - Transaction Manager Client is initialized. applicationId[liteflow-service] txServiceGroup[group_a]
+===2025-05-08 16:29:42.615 | [main] | INFO  | io.seata.rm.datasource.AsyncWorker | Line:73  - Async Commit Buffer Limit: 10000
+===2025-05-08 16:29:42.616 | [main] | INFO  | io.seata.rm.datasource.xa.ResourceManagerXA | Line:60  - ResourceManagerXA init ...
+===2025-05-08 16:29:42.622 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientBootstrap | Line:147 - NettyClientBootstrap has started
+===2025-05-08 16:29:42.622 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:227 - Resource Manager is initialized. applicationId[liteflow-service] txServiceGroup[group_a]
+===2025-05-08 16:29:42.622 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:231 - Global Transaction Clients are initialized. 
+===2025-05-08 16:29:42.624 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:42.714 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'com.yomahub.liteflow.springboot.config.LiteflowPropertyAutoConfiguration' of type [com.yomahub.liteflow.springboot.config.LiteflowPropertyAutoConfiguration$$EnhancerBySpringCGLIB$$6ff681cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:42.723 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'liteflow-com.yomahub.liteflow.springboot.LiteflowProperty' of type [com.yomahub.liteflow.springboot.LiteflowProperty] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:42.727 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'liteflow.monitor-com.yomahub.liteflow.springboot.LiteflowMonitorProperty' of type [com.yomahub.liteflow.springboot.LiteflowMonitorProperty] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:42.738 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'liteflowConfig' of type [com.yomahub.liteflow.property.LiteflowConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:42.743 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'com.yomahub.liteflow.spi.spring.SpringAware' of type [com.yomahub.liteflow.spi.spring.SpringAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:29:42.751 | [main] | INFO  | com.yomahub.liteflow.util.LOGOPrinter | Line:186 - 
+================================================================================================
+		 _     ___ _____ _____      _____ _     _____        __
+		| |   |_ _|_   _| ____|    |  ___| |   / _ \ \      / /
+		| |    | |  | | |  _| _____| |_  | |  | | | \ \ /\ / / 
+		| |___ | |  | | | |__|_____|  _| | |__| |_| |\ V  V /  
+		|_____|___| |_| |_____|    |_|   |_____\___/  \_/\_/   
+
+		Version: 2.13.2
+		Make your code amazing.
+		website：https://liteflow.cc
+================================================================================================
+
+===2025-05-08 16:29:42.777 | [main] | INFO  | com.yomahub.liteflow.process.impl.CmpAroundAspectBeanProcess | Line:33  - component[a] has been found
+===2025-05-08 16:29:42.782 | [main] | INFO  | com.yomahub.liteflow.process.impl.CmpAroundAspectBeanProcess | Line:33  - component[b] has been found
+===2025-05-08 16:29:42.786 | [main] | INFO  | com.yomahub.liteflow.process.impl.CmpAroundAspectBeanProcess | Line:33  - component[c] has been found
+===2025-05-08 16:29:43.442 | [main] | INFO  | com.netflix.config.sources.URLConfigurationSource | Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+===2025-05-08 16:29:43.448 | [main] | INFO  | com.netflix.config.sources.URLConfigurationSource | Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+===2025-05-08 16:29:43.562 | [main] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+===2025-05-08 16:29:44.763 | [main] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Line:181 - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+===2025-05-08 16:29:44.852 | [main] | INFO  | com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure | Line:56  - Init DruidDataSource
+===2025-05-08 16:29:44.961 | [main] | INFO  | com.alibaba.druid.pool.DruidDataSource | Line:998 - {dataSource-1} inited
+===2025-05-08 16:29:45.138 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:108 - will connect to 10.100.23.93:8091
+===2025-05-08 16:29:45.138 | [main] | INFO  | io.seata.core.rpc.netty.RmNettyRemotingClient | Line:276 - RM will register :jdbc:mysql://10.100.23.190:3306/learning
+===2025-05-08 16:29:45.138 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:56  - NettyPool create channel to transactionRole:RMROLE,address:10.100.23.93:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://10.100.23.190:3306/learning', applicationId='liteflow-service', transactionServiceGroup='group_a'} >
+===2025-05-08 16:29:45.155 | [main] | INFO  | io.seata.core.rpc.netty.RmNettyRemotingClient | Line:177 - register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x20d762de, L:/10.100.23.93:56158 - R:/10.100.23.93:8091]
+===2025-05-08 16:29:45.155 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:81  - register success, cost 14 ms, version:2.0.0,role:RMROLE,channel:[id: 0x20d762de, L:/10.100.23.93:56158 - R:/10.100.23.93:8091]
+===2025-05-08 16:29:48.025 | [main] | INFO  | com.example.liteflow.LiteFlowDemoApplicationTests | Line:61  - Started LiteFlowDemoApplicationTests in 12.169 seconds (JVM running for 13.003)
+===2025-05-08 16:29:48.204 | [main] | INFO  | com.yomahub.liteflow.core.FlowExecutor | Line:186 - [9b79012709924427add90c23238ac321]:requestId has generated
+===2025-05-08 16:29:48.205 | [main] | INFO  | com.yomahub.liteflow.core.FlowExecutor | Line:193 - [9b79012709924427add90c23238ac321]:slot[0] offered
+===2025-05-08 16:29:48.210 | [main] | INFO  | com.yomahub.liteflow.slot.Slot | Line:200 - [9b79012709924427add90c23238ac321]:ROLLBACK_CHAIN_NAME[null]
+
+===2025-05-08 16:29:48.211 | [main] | INFO  | com.yomahub.liteflow.slot.Slot | Line:200 - [9b79012709924427add90c23238ac321]:CHAIN_NAME[null]
+
+===2025-05-08 16:29:48.211 | [main] | INFO  | com.yomahub.liteflow.slot.DataBus | Line:193 - [9b79012709924427add90c23238ac321]:slot[0] released
+===2025-05-08 16:29:48.224 | [SpringContextShutdownHook] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Line:218 - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+===2025-05-08 16:29:48.225 | [SpringContextShutdownHook] | INFO  | com.alibaba.druid.pool.DruidDataSource | Line:2071 - {dataSource-1} closing ...
+===2025-05-08 16:29:48.229 | [SpringContextShutdownHook] | INFO  | com.alibaba.druid.pool.DruidDataSource | Line:2144 - {dataSource-1} closed
+===2025-05-08 16:29:54.794 | [SpringContextShutdownHook] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+===2025-05-08 16:29:54.797 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:438 - channel inactive: [id: 0x8acb9460, L:/10.100.23.93:56153 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.798 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:133 - return to pool, rm channel:[id: 0x8acb9460, L:/10.100.23.93:56153 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.798 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:438 - channel inactive: [id: 0x20d762de, L:/10.100.23.93:56158 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.798 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:133 - channel valid false,channel:[id: 0x8acb9460, L:/10.100.23.93:56153 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.798 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:133 - return to pool, rm channel:[id: 0x20d762de, L:/10.100.23.93:56158 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.799 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:120 - will destroy channel:[id: 0x8acb9460, L:/10.100.23.93:56153 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.799 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:133 - channel valid false,channel:[id: 0x20d762de, L:/10.100.23.93:56158 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.799 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:120 - will destroy channel:[id: 0x20d762de, L:/10.100.23.93:56158 ! R:/10.100.23.93:8091]
+===2025-05-08 16:29:54.799 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8acb9460, L:/10.100.23.93:56153 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:29:54.799 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x20d762de, L:/10.100.23.93:56158 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:29:54.799 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x8acb9460, L:/10.100.23.93:56153 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:29:54.799 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x20d762de, L:/10.100.23.93:56158 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:36:50.094 | [main] | INFO  | org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration | Line:112 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-liteflow-service.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-liteflow-service,DEFAULT_GROUP'}]
+===2025-05-08 16:36:50.105 | [main] | INFO  | com.example.liteflow.LiteFlowDemoApplicationTests | Line:651 - No active profile set, falling back to default profiles: default
+===2025-05-08 16:36:50.876 | [main] | INFO  | org.springframework.context.annotation.ConfigurationClassPostProcessor | Line:403 - Cannot enhance @Configuration bean definition 'com.yomahub.liteflow.springboot.config.LiteflowMainAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+===2025-05-08 16:36:50.948 | [main] | INFO  | org.springframework.cloud.context.scope.GenericScope | Line:295 - BeanFactory id=454d2d8c-5ff7-3b02-a569-63c8800b000d
+===2025-05-08 16:36:50.983 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:50.985 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:50.987 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:51.017 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:51.029 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:51.031 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:51.033 | [main] | INFO  | io.seata.spring.boot.autoconfigure.SeataAutoConfiguration | Line:63  - Automatically configure Seata
+===2025-05-08 16:36:51.077 | [main] | INFO  | io.seata.config.ConfigurationFactory | Line:69  - load Configuration from :Spring Configuration
+===2025-05-08 16:36:51.081 | [main] | INFO  | io.seata.config.ConfigurationFactory | Line:121 - load Configuration from :Spring Configuration
+===2025-05-08 16:36:51.139 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:208 - Initializing Global Transaction Clients ... 
+===2025-05-08 16:36:51.199 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientBootstrap | Line:147 - NettyClientBootstrap has started
+===2025-05-08 16:36:51.413 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:108 - will connect to 10.100.23.93:8091
+===2025-05-08 16:36:52.060 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:56  - NettyPool create channel to transactionRole:TMROLE,address:10.100.23.93:8091,msg:< RegisterTMRequest{applicationId='liteflow-service', transactionServiceGroup='group_a'} >
+===2025-05-08 16:36:53.312 | [main] | INFO  | io.seata.core.rpc.netty.TmNettyRemotingClient | Line:224 - register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x77dba7b4, L:/10.100.23.93:56640 - R:/10.100.23.93:8091]
+===2025-05-08 16:36:53.318 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:81  - register success, cost 49 ms, version:2.0.0,role:TMROLE,channel:[id: 0x77dba7b4, L:/10.100.23.93:56640 - R:/10.100.23.93:8091]
+===2025-05-08 16:36:53.319 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:222 - Transaction Manager Client is initialized. applicationId[liteflow-service] txServiceGroup[group_a]
+===2025-05-08 16:36:53.328 | [main] | INFO  | io.seata.rm.datasource.AsyncWorker | Line:73  - Async Commit Buffer Limit: 10000
+===2025-05-08 16:36:53.329 | [main] | INFO  | io.seata.rm.datasource.xa.ResourceManagerXA | Line:60  - ResourceManagerXA init ...
+===2025-05-08 16:36:53.334 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientBootstrap | Line:147 - NettyClientBootstrap has started
+===2025-05-08 16:36:53.334 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:227 - Resource Manager is initialized. applicationId[liteflow-service] txServiceGroup[group_a]
+===2025-05-08 16:36:53.334 | [main] | INFO  | io.seata.spring.annotation.GlobalTransactionScanner | Line:231 - Global Transaction Clients are initialized. 
+===2025-05-08 16:36:53.337 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:53.410 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'com.yomahub.liteflow.springboot.config.LiteflowPropertyAutoConfiguration' of type [com.yomahub.liteflow.springboot.config.LiteflowPropertyAutoConfiguration$$EnhancerBySpringCGLIB$$6ff681cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:53.416 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'liteflow-com.yomahub.liteflow.springboot.LiteflowProperty' of type [com.yomahub.liteflow.springboot.LiteflowProperty] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:53.421 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'liteflow.monitor-com.yomahub.liteflow.springboot.LiteflowMonitorProperty' of type [com.yomahub.liteflow.springboot.LiteflowMonitorProperty] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:53.428 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'liteflowConfig' of type [com.yomahub.liteflow.property.LiteflowConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:53.432 | [main] | INFO  | org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker | Line:335 - Bean 'com.yomahub.liteflow.spi.spring.SpringAware' of type [com.yomahub.liteflow.spi.spring.SpringAware] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+===2025-05-08 16:36:53.440 | [main] | INFO  | com.yomahub.liteflow.util.LOGOPrinter | Line:186 - 
+================================================================================================
+		 _     ___ _____ _____      _____ _     _____        __
+		| |   |_ _|_   _| ____|    |  ___| |   / _ \ \      / /
+		| |    | |  | | |  _| _____| |_  | |  | | | \ \ /\ / / 
+		| |___ | |  | | | |__|_____|  _| | |__| |_| |\ V  V /  
+		|_____|___| |_| |_____|    |_|   |_____\___/  \_/\_/   
+
+		Version: 2.13.2
+		Make your code amazing.
+		website：https://liteflow.cc
+================================================================================================
+
+===2025-05-08 16:36:53.464 | [main] | INFO  | com.yomahub.liteflow.process.impl.CmpAroundAspectBeanProcess | Line:33  - component[a] has been found
+===2025-05-08 16:36:53.467 | [main] | INFO  | com.yomahub.liteflow.process.impl.CmpAroundAspectBeanProcess | Line:33  - component[b] has been found
+===2025-05-08 16:36:53.470 | [main] | INFO  | com.yomahub.liteflow.process.impl.CmpAroundAspectBeanProcess | Line:33  - component[c] has been found
+===2025-05-08 16:36:54.092 | [main] | INFO  | com.netflix.config.sources.URLConfigurationSource | Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+===2025-05-08 16:36:54.097 | [main] | INFO  | com.netflix.config.sources.URLConfigurationSource | Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+===2025-05-08 16:36:54.204 | [main] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+===2025-05-08 16:36:55.291 | [main] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Line:181 - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+===2025-05-08 16:36:55.351 | [main] | INFO  | com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure | Line:56  - Init DruidDataSource
+===2025-05-08 16:36:55.453 | [main] | INFO  | com.alibaba.druid.pool.DruidDataSource | Line:998 - {dataSource-1} inited
+===2025-05-08 16:36:55.616 | [main] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:108 - will connect to 10.100.23.93:8091
+===2025-05-08 16:36:55.617 | [main] | INFO  | io.seata.core.rpc.netty.RmNettyRemotingClient | Line:276 - RM will register :jdbc:mysql://10.100.23.190:3306/learning
+===2025-05-08 16:36:55.617 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:56  - NettyPool create channel to transactionRole:RMROLE,address:10.100.23.93:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://10.100.23.190:3306/learning', applicationId='liteflow-service', transactionServiceGroup='group_a'} >
+===2025-05-08 16:36:55.628 | [main] | INFO  | io.seata.core.rpc.netty.RmNettyRemotingClient | Line:177 - register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0xff7e188b, L:/10.100.23.93:56647 - R:/10.100.23.93:8091]
+===2025-05-08 16:36:55.628 | [main] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:81  - register success, cost 7 ms, version:2.0.0,role:RMROLE,channel:[id: 0xff7e188b, L:/10.100.23.93:56647 - R:/10.100.23.93:8091]
+===2025-05-08 16:36:58.012 | [main] | INFO  | com.yomahub.liteflow.parser.factory.FlowParserProvider | Line:193 - flow info loaded from local file,path=config/flow-demo01.xml
+===2025-05-08 16:36:58.493 | [main] | INFO  | com.example.liteflow.LiteFlowDemoApplicationTests | Line:61  - Started LiteFlowDemoApplicationTests in 11.704 seconds (JVM running for 12.417)
+===2025-05-08 16:36:58.648 | [main] | INFO  | com.yomahub.liteflow.core.FlowExecutor | Line:186 - [dbdca45c1a1d4f2ab0de725c795a8414]:requestId has generated
+===2025-05-08 16:36:58.649 | [main] | INFO  | com.yomahub.liteflow.core.FlowExecutor | Line:193 - [dbdca45c1a1d4f2ab0de725c795a8414]:slot[0] offered
+===2025-05-08 16:36:58.656 | [main] | INFO  | com.example.liteflow.service.ACmp | Line:193 - [dbdca45c1a1d4f2ab0de725c795a8414]:[O]start component[a] execution
+===2025-05-08 16:36:58.657 | [main] | INFO  | com.example.liteflow.service.ACmp | Line:12  - A executed!
+===2025-05-08 16:36:58.657 | [main] | INFO  | com.example.liteflow.service.ACmp | Line:200 - [dbdca45c1a1d4f2ab0de725c795a8414]:component[a] finished in 1 milliseconds
+===2025-05-08 16:36:58.658 | [main] | INFO  | com.example.liteflow.service.BCmp | Line:193 - [dbdca45c1a1d4f2ab0de725c795a8414]:[O]start component[b] execution
+===2025-05-08 16:36:58.658 | [main] | INFO  | com.example.liteflow.service.BCmp | Line:12  - B executed!
+===2025-05-08 16:36:58.658 | [main] | INFO  | com.example.liteflow.service.BCmp | Line:200 - [dbdca45c1a1d4f2ab0de725c795a8414]:component[b] finished in 0 milliseconds
+===2025-05-08 16:36:58.658 | [main] | INFO  | com.example.liteflow.service.CCmp | Line:193 - [dbdca45c1a1d4f2ab0de725c795a8414]:[O]start component[c] execution
+===2025-05-08 16:36:58.658 | [main] | INFO  | com.example.liteflow.service.CCmp | Line:12  - C executed!
+===2025-05-08 16:36:58.658 | [main] | INFO  | com.example.liteflow.service.CCmp | Line:200 - [dbdca45c1a1d4f2ab0de725c795a8414]:component[c] finished in 0 milliseconds
+===2025-05-08 16:36:58.659 | [main] | INFO  | com.yomahub.liteflow.slot.Slot | Line:200 - [dbdca45c1a1d4f2ab0de725c795a8414]:CHAIN_NAME[chain1]
+a<1>==>b<0>==>c<0>
+===2025-05-08 16:36:58.659 | [main] | INFO  | com.yomahub.liteflow.slot.DataBus | Line:193 - [dbdca45c1a1d4f2ab0de725c795a8414]:slot[0] released
+===2025-05-08 16:36:58.673 | [SpringContextShutdownHook] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler | Line:218 - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+===2025-05-08 16:36:58.674 | [SpringContextShutdownHook] | INFO  | com.alibaba.druid.pool.DruidDataSource | Line:2071 - {dataSource-1} closing ...
+===2025-05-08 16:36:58.677 | [SpringContextShutdownHook] | INFO  | com.alibaba.druid.pool.DruidDataSource | Line:2144 - {dataSource-1} closed
+===2025-05-08 16:37:05.425 | [SpringContextShutdownHook] | INFO  | org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor | Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+===2025-05-08 16:37:05.428 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:438 - channel inactive: [id: 0x77dba7b4, L:/10.100.23.93:56640 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.428 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:133 - return to pool, rm channel:[id: 0x77dba7b4, L:/10.100.23.93:56640 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.430 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:133 - channel valid false,channel:[id: 0x77dba7b4, L:/10.100.23.93:56640 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.430 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:120 - will destroy channel:[id: 0x77dba7b4, L:/10.100.23.93:56640 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.430 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x77dba7b4, L:/10.100.23.93:56640 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:37:05.431 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:438 - channel inactive: [id: 0xff7e188b, L:/10.100.23.93:56647 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.431 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyClientChannelManager | Line:133 - return to pool, rm channel:[id: 0xff7e188b, L:/10.100.23.93:56647 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.431 | [NettyClientSelector_TMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x77dba7b4, L:/10.100.23.93:56640 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:37:05.431 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:133 - channel valid false,channel:[id: 0xff7e188b, L:/10.100.23.93:56647 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.432 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.NettyPoolableFactory | Line:120 - will destroy channel:[id: 0xff7e188b, L:/10.100.23.93:56647 ! R:/10.100.23.93:8091]
+===2025-05-08 16:37:05.432 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xff7e188b, L:/10.100.23.93:56647 ! R:/10.100.23.93:8091]) will closed
+===2025-05-08 16:37:05.432 | [NettyClientSelector_RMROLE_1_1] | INFO  | io.seata.core.rpc.netty.AbstractNettyRemotingClient | Line:488 - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xff7e188b, L:/10.100.23.93:56647 ! R:/10.100.23.93:8091]) will closed
