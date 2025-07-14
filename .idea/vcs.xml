@@ -2,11 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/seata-demo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/seata-demo/common-dao" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/seata-demo/common-web" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/seata-demo/lucene-demo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/seata-demo/server-a" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/seata-demo/server-b" vcs="Git" />
   </component>
 </project>

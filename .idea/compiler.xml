@@ -12,6 +12,17 @@
         <module name="ocpp-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-dao" target="1.8" />
+      <module name="common-rpc" target="1.8" />
+      <module name="common-web" target="1.8" />
+      <module name="liteflow-demo" target="1.8" />
+      <module name="lucene-demo" target="1.8" />
+      <module name="seata-demo" target="1.8" />
+      <module name="server-a" target="1.8" />
+      <module name="server-b" target="1.8" />
+      <module name="server-c" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
